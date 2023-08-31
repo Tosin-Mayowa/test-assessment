@@ -74,6 +74,7 @@
 .area{
     border-radius: 20px;
     border: none;
+    width: 100%;
 }
 
 
@@ -96,3 +97,57 @@
     border: none;
 }
 
+ @media screen and (max-width: 500px) {
+ .form_container{
+    margin-top: 50px;
+width: 30rem;
+ padding: 1rem;
+}
+.fullName{
+ width:100%;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+}
+
+.firstName{
+   width:100%;
+   height: 4.3rem;
+   border-radius: 50px;
+   border: none;
+}
+
+.lastName{
+    width:100%;
+     height: 4.3rem;
+   border-radius: 50px;
+    border: none;
+}
+
+#form_email{
+    width:100%;
+    height: 4.3rem;
+   
+}
+
+ }
+
+ @media screen and (max-width: 600px) {
+     .form_container{
+    margin-top: 70px;
+width: 50rem;
+ padding: 2rem;
+}
+ }
+
+ @media screen and (max-width: 840px) {
+.form_container{
+    margin-top: 100px;
+    
+}
+.inp_wrapper{
+    align-self: flex-start;
+    
+}
+
+ }

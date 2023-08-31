@@ -55,7 +55,7 @@ overflow: hidden;
     border-radius: 50px;
 }
 
-button{
+.desk_btn{
 font-weight: 700;
     font-size:1.4rem;
     line-height: 1.75rem;
@@ -70,13 +70,35 @@ font-weight: 700;
     margin-left: 1rem;
 }
 
+@media screen and (max-width: 850px) {
+    .para_text{
+        font-size: 0.8rem;
+    }
+}
 
 @media screen and (max-width: 750px) {
 .texts_desktop{
     align-items:flex-start ;
 }
+.desk_btn{
+    width: 18rem;
+     font-size:1.2rem;
+    line-height: 1.5rem;
+    
+}
+
+#type_email{
+width: 25rem;
+
+}
+.input_action{
+    display: flex;
+
+  
 
 
+    
+}
 
 .desktop_header_texts{
     font-weight:700;
@@ -121,4 +143,5 @@ flex-shrink: 0;
     line-height: 2.2rem;
     
 }
+
 }

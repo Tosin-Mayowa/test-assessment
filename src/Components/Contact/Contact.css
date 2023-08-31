@@ -68,3 +68,19 @@ width: 100%;
     padding:9rem 6.4rem ;
 
 }
+
+
+ @media screen and (max-width: 840px) {
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+#small_cont{
+    align-self: start;
+
+padding: 6rem 3rem;
+}
+}

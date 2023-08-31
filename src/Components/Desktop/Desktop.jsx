@@ -19,7 +19,7 @@ const Desktop = () => {
           </div>
           <div className="input_action">
             <input type="email" placeholder="Email address " id="type_email" />
-            <button>Subscribe</button>
+            <button className="desk_btn">Subscribe</button>
           </div>
         </div>
       </div>
