@@ -1,0 +1,6 @@
+.mains_layout{
+    display: flex;
+    flex-direction: column;
+    height: 1800px;
+    justify-content: space-between;
+}

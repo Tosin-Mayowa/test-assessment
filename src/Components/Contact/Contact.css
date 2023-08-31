@@ -1,0 +1,70 @@
+#content{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../Asset/frame.png');
+    background-size: cover;
+    background-position: center;
+   padding:9rem 6.4rem ;
+    background-repeat: no-repeat;
+}
+
+#small_cont{
+width: 40rem;
+height: 36.8rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 0px 32px 0px 32px;
+background-color:rgba(211,211,211,0.5);
+align-self: flex-end;
+
+}
+
+.so_logo{
+    width:3.7rem;
+height: 3.7rem;
+object-fit: contain;
+}
+
+.socials{
+    display: flex;
+    justify-content:space-between ;
+        width: 17.8rem;
+height: 3.7rem;
+}
+
+.para_inner{
+    width: 32rem;
+height: 16rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.para{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #131313;
+    
+}
+
+.cont_logo{
+width: 11rem;
+height: 5.9rem;
+object-fit: cover;
+}
+
+.image{
+width: 100%;
+    height:100%;
+}
+.image_form{
+ width: 131.2rem;
+    height:75.3rem;
+    
+    padding:9rem 6.4rem ;
+
+}

@@ -1,0 +1,287 @@
+.header {
+  height: 10rem;
+  z-index: 100;
+  display: flex;
+  justify-content: space-evenly;
+  filter: drop-shadow(0 0 20 0 #000);
+  border: 1px solid black;
+}
+
+
+::placeholder {
+  color: #626262;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+
+
+.Logo {
+  width: 15.8rem;
+  height: 8.5rem;
+  object-fit: cover;
+}
+.header__nav {
+  height: 100%;
+}
+/* parent ul */
+.nav_links {
+  width: 34rem;
+ height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+
+}
+li {
+  list-style-type: none;
+  align-self: center;
+}
+
+li a {
+  text-decoration: none;
+  color: #131313;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+/* end parent ul */
+
+.search_inp_div {
+  align-self: center;
+  height: 5rem;
+  position: relative;
+}
+.search_inp {
+  border-radius: 50px;
+  width: 35rem;
+  height: 100%;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #d0d0d0;
+}
+
+.search_icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: cover;
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  z-index: 10;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+
+/* cart sectoin */
+.select_cart_flag_div {
+  width: 20.15rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+
+  align-self: center;
+}
+
+.flag {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  align-self: center;
+}
+
+.cart {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  color: #131313;
+  align-self: center;
+}
+.user_icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  color: #131313;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.select_profile_div {
+  position: relative;
+  width: 8rem;
+  height: 100%;
+}
+
+#select_input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border-color: #f36f00;
+  background-color: #ffd7d3;
+  color: #131313;
+}
+
+.header__nav-hamburger{
+  display: none;
+}
+
+/* Media query */
+
+@media screen and (max-width: 670px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    width: 30rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    text-align: center;
+    background-color: #f36f00;
+  }
+
+  .select_cart_flag_div {
+    display: none;
+  }
+
+  .search_inp_div {
+    display: none;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+  
+  }
+
+  li {
+    margin-top: 4vh;
+
+    opacity: 0;
+  }
+
+  li:nth-child(1) {
+    transition: all 0.5s ease-in-out 0.2s;
+  }
+
+  li:nth-child(2) {
+    transition: all 0.5s ease-in-out 0.4s;
+  }
+
+  li:nth-child(3) {
+    transition: all 0.5s ease-in-out 0.6s;
+  }
+
+  li:nth-child(4) {
+    transition: all 0.5s ease-in-out 0.8s;
+  }
+  li a {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 400;
+   padding-right: 5rem;
+   z-index: 1000;
+  }
+
+  .clicked {
+    width: 30rem;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 55%;
+
+    text-align: center;
+    background-color: #f36f00;
+  }
+  .header__nav-hamburger {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
+    background-color: #f36f00;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    transition: all 0.2s ease-in-out;
+    z-index: 200;
+  }
+
+  .line-1 {
+    transform: rotateZ(-405deg) translate(-0.8rem, 0.6rem);
+  }
+
+  .line-2 {
+    opacity: 0;
+  }
+
+  .line-3 {
+    transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+  }
+
+  .fade {
+    opacity: 1;
+  }
+}
+
+ @media screen and (max-width: 880px) {
+    .search_inp {
+  border-radius: 50px;
+  width: 13rem;
+  height: 100%;
+  padding: 3px 8px 3px 8px;
+  border: 1px solid #d0d0d0;
+}
+.Logo {
+  width: 11.8rem;
+  height: 8.5rem;
+  object-fit: contain;
+  
+}
+
+.select_cart_flag_div {
+  width: 17.15rem;
+  height: 3.4rem;
+ 
+}
+
+.nav_links {
+  width: 20rem;
+
+}
+.select_profile_div{
+    width:5rem;
+}
+
+
+
+}
+
+@media screen and (max-width: 960px) {
+    .search_inp {
+  border-radius: 50px;
+  width: 20rem;
+  height: 100%;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #d0d0d0;
+}
+} 
